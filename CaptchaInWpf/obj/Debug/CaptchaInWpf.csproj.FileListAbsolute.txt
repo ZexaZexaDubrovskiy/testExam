@@ -1,0 +1,28 @@
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.csproj.AssemblyReference.cache
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\MainWindow.baml
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\MainWindow.g.cs
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\App.g.cs
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf_MarkupCompile.cache
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.g.resources
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.Properties.Resources.resources
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.csproj.GenerateResource.cache
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.csproj.CoreCompileInputs.cache
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\bin\Debug\CaptchaInWpf.exe.config
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\bin\Debug\CaptchaInWpf.exe
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\bin\Debug\CaptchaInWpf.pdb
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.exe
+C:\Разное\РПК\Дисциплины\РЭУБД\Создание WPF-проекта\Презентационный материал\Капча\CaptchaInWpf\obj\Debug\CaptchaInWpf.pdb
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\bin\Debug\CaptchaInWpf.exe.config
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\bin\Debug\CaptchaInWpf.exe
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\bin\Debug\CaptchaInWpf.pdb
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.csprojAssemblyReference.cache
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\MainWindow.baml
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\MainWindow.g.cs
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\App.g.cs
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf_MarkupCompile.cache
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.g.resources
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.Properties.Resources.resources
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.csproj.GenerateResource.cache
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.csproj.CoreCompileInputs.cache
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.exe
+D:\4IS2\Practioca\Столовые приборы\CaptchaInWpf\obj\Debug\CaptchaInWpf.pdb
