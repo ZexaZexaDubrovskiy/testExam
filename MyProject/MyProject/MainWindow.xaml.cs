@@ -22,6 +22,7 @@ namespace MyProject
     public partial class MainWindow : Window
     {
         private Base.TradeDBEntities dataBase;
+        private Base.User User;
         public MainWindow(Base.User User)
         {
             InitializeComponent();
@@ -37,6 +38,17 @@ namespace MyProject
 
             if (User.UserName != null && User.UserSurname != null && User.UserPatronymic != null)
                 FIOtext.Text = $"{User.UserSurname} {User.UserName} {User.UserPatronymic}";
+
+            this.User = User;
+            if (User.Role is null)
+            {
+                rowAdminPanel.Height = new GridLength(0);
+            }
+            else
+            {
+                if (this.User.Role.Equals(1))
+                    rowAdminPanel.Height = new GridLength(100);
+            }
 
             update();
         }

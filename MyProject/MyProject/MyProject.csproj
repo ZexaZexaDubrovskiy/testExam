@@ -64,8 +64,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseWindow\editProduct.xaml.cs">
+      <DependentUpon>editProduct.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SourceCore.cs" />
     <Page Include="BaseWindow\Authorization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BaseWindow\editProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

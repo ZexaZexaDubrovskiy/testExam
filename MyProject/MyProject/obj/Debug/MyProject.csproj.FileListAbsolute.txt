@@ -44,3 +44,5 @@ D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\De
 D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\Debug\MyProject.csproj.CopyComplete
 D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\Debug\MyProject.exe
 D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\Debug\MyProject.pdb
+D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\Debug\BaseWindow\editProduct.g.cs
+D:\4-ИС-2\Practioca\Столовые приборы\MyProject\MyProject\obj\Debug\BaseWindow\editProduct.baml
