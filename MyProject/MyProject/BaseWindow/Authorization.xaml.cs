@@ -41,7 +41,7 @@ namespace MyProject.BaseWindow
             timer.Interval = 10000;
             timer.Elapsed += timerForUser;
         }
-
+//таймер
         private void timerForUser(object sender, ElapsedEventArgs e)
         {
             Dispatcher.Invoke(new Action(() =>
@@ -53,7 +53,7 @@ namespace MyProject.BaseWindow
             timer.Stop();
         }
 
-
+//переход на окно mainWindow
         private void SignIn_Click(object sender, RoutedEventArgs e)
         {
             Base.User User = SourceCore.MyBase.User.SingleOrDefault(u => u.UserLogin == login.Text && u.UserPassword == password.Password);
@@ -105,7 +105,7 @@ namespace MyProject.BaseWindow
         }
 
 
-
+//Войти как Гость
         private void SignInRoleGuest_Click(object sender, RoutedEventArgs e)
         {
             Base.User User = new Base.User();
