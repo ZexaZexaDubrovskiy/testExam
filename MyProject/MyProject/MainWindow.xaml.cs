@@ -53,6 +53,7 @@ namespace MyProject
             update();
         }
 
+//выход на окно авторизации
         private void exitButton_Click(object sender, RoutedEventArgs e)
         {
             Authorization window = new Authorization();
@@ -62,7 +63,7 @@ namespace MyProject
         }
 
         private bool isOpened = false;
-
+//выбор продукта
         private void productList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
@@ -80,12 +81,12 @@ namespace MyProject
             update();
 
         }
-
+//обновление listBox
         private void update()
         {
             productList.ItemsSource = SourceCore.MyBase.Product.ToList();
         }
-
+//Добавить продукт
         private void addProductButton_Click(object sender, RoutedEventArgs e)
         {
 
