@@ -57,7 +57,7 @@ namespace MyProject.BaseWindow
             }
 
         }
-
+//Проверка значений
         private bool check()
         {
             if (int.TryParse(quantityProduct.Text, out int result))
@@ -70,7 +70,7 @@ namespace MyProject.BaseWindow
             return false;
         }
 
-
+//добавить или изменить продукт
         private void acceptButton_Click(object sender, RoutedEventArgs e)
         {
             if (check())
