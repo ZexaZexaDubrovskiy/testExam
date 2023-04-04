@@ -7,6 +7,13 @@
     <Property Name="idOrderPickupPoint" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="address" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Order">
     <Key>
       <PropertyRef Name="OrderID" />
@@ -31,7 +38,7 @@
     <Property Name="ProductArticleNumber" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="ProductName" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductDescription" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="ProductCategory" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ProductCategory" Type="int" Nullable="false" />
     <Property Name="ProductPhoto" Type="image" />
     <Property Name="ProductManufacturer" Type="nvarchar(max)" Nullable="false" />
     <Property Name="ProductCost" Type="decimal" Precision="19" Scale="4" Nullable="false" />
@@ -126,6 +133,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Product_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="ProductCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Product_Providerss">
     <End Role="Providerss" Type="Self.Providerss" Multiplicity="1" />
     <End Role="Product" Type="Self.Product" Multiplicity="*" />
@@ -140,6 +159,7 @@
   </Association>
   <EntityContainer Name="TradeDBModelStoreContainer">
     <EntitySet Name="___" EntityType="Self.___" Schema="dbo" Table="..." store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="OrderProduct" EntityType="Self.OrderProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
@@ -162,6 +182,10 @@
     <AssociationSet Name="FK_Order____" Association="Self.FK_Order____">
       <End Role="___" EntitySet="___" />
       <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Category" Association="Self.FK_Product_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
     </AssociationSet>
     <AssociationSet Name="FK_Product_Providerss" Association="Self.FK_Product_Providerss">
       <End Role="Providerss" EntitySet="Providerss" />

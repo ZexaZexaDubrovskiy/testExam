@@ -19,25 +19,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Product">
-      <EntityTypeMapping TypeName="TradeDBModel.Product">
-        <MappingFragment StoreEntitySet="Product">
-          <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
-          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
-          <ScalarProperty Name="ProductPhoto" ColumnName="ProductPhoto" />
-          <ScalarProperty Name="ProductManufacturer" ColumnName="ProductManufacturer" />
-          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
-          <ScalarProperty Name="ProductDiscountAmount" ColumnName="ProductDiscountAmount" />
-          <ScalarProperty Name="ProductQuantityInStock" ColumnName="ProductQuantityInStock" />
-          <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
-          <ScalarProperty Name="provider" ColumnName="provider" />
-          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
-          <ScalarProperty Name="maxDiscount" ColumnName="maxDiscount" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Providerss">
       <EntityTypeMapping TypeName="TradeDBModel.Providerss">
         <MappingFragment StoreEntitySet="Providerss">
@@ -78,12 +59,39 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="TradeDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="TradeDBModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="maxDiscount" ColumnName="maxDiscount" />
+          <ScalarProperty Name="UNIT" ColumnName="UNIT" />
+          <ScalarProperty Name="provider" ColumnName="provider" />
+          <ScalarProperty Name="ProductStatus" ColumnName="ProductStatus" />
+          <ScalarProperty Name="ProductQuantityInStock" ColumnName="ProductQuantityInStock" />
+          <ScalarProperty Name="ProductDiscountAmount" ColumnName="ProductDiscountAmount" />
+          <ScalarProperty Name="ProductCost" ColumnName="ProductCost" />
+          <ScalarProperty Name="ProductManufacturer" ColumnName="ProductManufacturer" />
+          <ScalarProperty Name="ProductPhoto" ColumnName="ProductPhoto" />
+          <ScalarProperty Name="ProductCategory" ColumnName="ProductCategory" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <AssociationSetMapping Name="OrderProduct" TypeName="TradeDBModel.OrderProduct" StoreEntitySet="OrderProduct">
-      <EndProperty Name="Order">
-        <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-      </EndProperty>
       <EndProperty Name="Product">
         <ScalarProperty Name="ProductArticleNumber" ColumnName="ProductArticleNumber" />
+      </EndProperty>
+      <EndProperty Name="Order">
+        <ScalarProperty Name="OrderID" ColumnName="OrderID" />
       </EndProperty>
     </AssociationSetMapping>
   </EntityContainerMapping>

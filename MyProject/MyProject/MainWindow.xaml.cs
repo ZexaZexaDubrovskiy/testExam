@@ -61,15 +61,43 @@ namespace MyProject
 
         }
 
+        private bool isOpened = false;
+
         private void productList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+
+
             Base.Product currentProduct = (Base.Product)productList.SelectedItem;
+
+
+
+            if (this.User.UserRole.Equals(1))
+            {
+                editProduct editWindow = new editProduct(currentProduct);
+                editWindow.ShowDialog();
+            }
+
+            update();
 
         }
 
         private void update()
         {
             productList.ItemsSource = SourceCore.MyBase.Product.ToList();
+        }
+
+        private void addProductButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (User.UserRole.Equals(1))
+            {
+                editProduct editWindow = new editProduct(null);
+                editWindow.ShowDialog();
+
+                update();
+            }
+
+
         }
     }
 }

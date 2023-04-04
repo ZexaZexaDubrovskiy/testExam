@@ -5,8 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyProject.BaseWindow"
         mc:Ignorable="d"
-        Title="editProduct" Height="450" Width="800">
+        Title="editProduct" Height="800" MinHeight="800" MaxHeight="800"
+        Width="650" MaxWidth="650" MinWidth="650" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Наименование" Margin="50,20,100,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <TextBox x:Name="nameProduct" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" Background="#76e383" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Категория" Margin="50,20,140,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <ComboBox x:Name="categoryProduct" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" 
+                           Background="#76e383" DisplayMemberPath="name"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Кол-во на складе" Margin="50,20,70,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <TextBox x:Name="quantityProduct" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" Background="#76e383" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Единица измерения" Margin="50,20,50,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <TextBox x:Name="unitProduct" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" Background="#76e383"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Стоимость" Margin="50,20,140,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <TextBox x:Name="costProduct" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" Background="#76e383"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Поставщик" Margin="50,20,130,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <ComboBox x:Name="providerProduct" DisplayMemberPath="name" Width="300" Height="50" FontFamily="Comic Sans MS" FontSize="20" Background="#76e383"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Описание" Margin="50,20,140,0" Height="50" FontFamily="Comic Sans MS" FontSize="20"/>
+                <TextBox x:Name="descriptionPsroduct" Width="300"  FontFamily="Comic Sans MS" FontSize="20" 
+                         TextWrapping="Wrap" Height="200" Background="#76e383"
+                         />
+            </StackPanel>
+
+            <Button x:Name="acceptButton" Click="acceptButton_Click" Content="Добавить" Width="200" Height="75"  FontFamily="Comic Sans MS" FontSize="20" 
+                     Background="#498c51" Margin="0,20,0,0"/>
+
+
+        </StackPanel>
+
     </Grid>
 </Window>

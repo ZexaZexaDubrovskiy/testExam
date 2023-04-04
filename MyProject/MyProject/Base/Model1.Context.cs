@@ -27,10 +27,11 @@ namespace MyProject.Base
     
         public virtual DbSet<C___> C___ { get; set; }
         public virtual DbSet<Order> Order { get; set; }
-        public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<Providerss> Providerss { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
     }
 }

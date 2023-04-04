@@ -8,9 +8,7 @@
         Title="MainWindow" Height="800" MaxHeight="800" MinHeight="800" 
         Width="1200" MaxWidth="1200" MinWidth="1200" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <DataTemplate x:Key="listTemplate">
-
-
+        <DataTemplate x:Key="listTemplate" >
             <StackPanel  Orientation="Horizontal" Width="1200" Background="#76e383">
                 <Image Width="300" Height="150" Source="{Binding Path=ProductPhoto}"/>
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="500">
@@ -51,7 +49,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal">
-            <Button x:Name="addProductButton" Content="Добавить товар" Width="200" 
+            <Button x:Name="addProductButton" Click="addProductButton_Click" Content="Добавить товар" Width="200" 
                     Height="80" Margin="50,0,0,0" Background="#498c51"
                     FontFamily="Comic Sans MS" FontSize="20"/>
 
@@ -77,7 +75,7 @@
                    FontFamily="Comic Sans MS" FontSize="20"/>
         </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" >
+        <StackPanel Grid.Column="0" Grid.Row="2" Grid.RowSpan="2"  Grid.ColumnSpan="2"  Height="500">
             <ListBox x:Name="productList" ItemTemplate="{StaticResource listTemplate}"
                       SelectionChanged="productList_SelectionChanged"
                      Background="Transparent" BorderThickness="0" Height="500"

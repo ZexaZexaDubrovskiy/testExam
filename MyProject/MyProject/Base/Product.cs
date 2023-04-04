@@ -23,7 +23,7 @@ namespace MyProject.Base
         public string ProductArticleNumber { get; set; }
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public string ProductCategory { get; set; }
+        public int ProductCategory { get; set; }
         public byte[] ProductPhoto { get; set; }
         public string ProductManufacturer { get; set; }
         public decimal ProductCost { get; set; }
@@ -34,6 +34,7 @@ namespace MyProject.Base
         public string UNIT { get; set; }
         public Nullable<byte> maxDiscount { get; set; }
     
+        public virtual Category Category { get; set; }
         public virtual Providerss Providerss { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
